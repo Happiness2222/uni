@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | Evergreen State University</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="register-box">
+        <h1>Student Registration</h1>
+        <p>Create your student account</p>
+        <form id="registerForm">
+            <div class="input-group">
+                <label>First Name</label>
+                <input type="text" id="firstname" placeholder="Enter First Name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Last Name</label>
+                <input type="text" id="lastname" placeholder="Enter Last Name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="08012345678" required>
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <select id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Faculty</label>
+                <select id="faculty" required>
+                    <option value="">Select Faculty</option>
+                    <option>Faculty of Science</option>
+                    <option>Faculty of Engineering</option>
+                    <option>Faculty of Health Sciences</option>
+                    <option>Faculty of Management Sciences</option>
+                    <option>Faculty of Law</option>
+                    <option>Faculty of Education</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Department</label>
+                <select id="department" required>
+                <option value="">Select Department</option>
+                <option>Computer Science</option>
+                <option>Mathematics</option>
+                <option>Statistics</option>
+                <option>Physics</option>
+                <option>Chemistry</option>
+                <option>Civil Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Electrical Engineering</option>
+                <option>Computer Engineering</option>
+                <option>Nursing</option>
+                <option>Medical Laboratory Science</option>
+                <option>Public Health</option>
+                <option>Accounting</option>
+                <option>Banking and Finance</option>
+                <option>Business Administration</option>
+                <option>Economics</option>
+                <option>Law</option>
+                <option>Educational Management</option>
+                <option>Guidance and Counselling</option>
+                <option>Science Education</option>
+                <option>Arts Education</option>
+        </select>
+            </div>
+            
+            <div class="input-group">
+                <label>Level</label>
+                <select id="level" required>
+                    <option value="">Select Level</option>
+                    <option>100 Level</option>
+                    <option>200 Level</option>
+                    <option>300 Level</option>
+                    <option>400 Level</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Registration Number</label>
+                <input type="text" id="regno" placeholder="Enter Registration Number" required>
+            </div>
+
+            <div class="input-group">
+                <label>Matric Number</label>
+                <input type="text" id="matric" placeholder="Enter Matric Number" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Create Password" required>
+            </div>
+
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            </div>
+
+            <button type="submit" id="registerBtn">
+                Register
+            </button>
+
+            <p class="login-link">
+                Already have an account?
+                <a href="login.html">
+                    Login
+                </a>
+            </p>
+        </form>
+    </div>
+</div>
+
+<script src="register.js"></script>
+</body>
+</html

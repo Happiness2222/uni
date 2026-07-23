@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Evergreen State University</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+<aside class="sidebar">
+    <div class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h2>Evergreen State University</h2>
+    </div>
+
+    <ul>
+        <li>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </a>
+        </li>
+
+        <li>
+            <a href="e-matriculation.html">
+                <i class="fa-solid fa-file-signature"></i>
+                E-Matriculation
+            </a>
+        </li>
+
+        <li>
+            <a href="course-registration.html">
+                <i class="fa-solid fa-book-open"></i>
+                Course Registration
+            </a>
+        </li>
+
+        <li>
+            <a href="results.html">
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                Check Results
+            </a>
+        </li>
+
+        <li>
+            <a href="password.html">
+                <i class="fa-solid fa-lock"></i>
+                Change Password
+            </a>
+        </li>
+
+        <li id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </li>
+    </ul>
+</aside>
+
+<main class="main-content">
+    <div class="profile-card">
+        <h1>Student Profile</h1>
+        <form id="profileForm">
+            <div class="input-group">
+                <label>First Name</label>
+                <input type="text" id="firstname">
+            </div>
+
+            <div class="input-group">
+                <label>Last Name</label>
+                <input type="text" id="lastname">
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" id="email" readonly>
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="text" id="phone">
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <select id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Faculty</label>
+                <input type="text" id="faculty">
+            </div>
+
+            <div class="input-group">
+                <label>Department</label>
+                <input type="text" id="department">
+            </div>
+
+            <div class="input-group">
+                <label>Level</label>
+                <select id="level">
+                    <option>100 Level</option>
+                    <option>200 Level</option>
+                    <option>300 Level</option>
+                    <option>400 Level</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Registration Number</label>
+                <input type="text" id="regno" readonly>
+            </div>
+
+            <div class="input-group">
+                <label>Matric Number</label>
+                <input type="text" id="matric" readonly>
+            </div>
+
+            <button type="submit">
+                Save Changes
+            </button>
+        </form>
+    </div>
+</main>
+</div>
+
+<script src="profile.js"></script>
+
+</body>
+</html>
