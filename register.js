@@ -1,3 +1,4 @@
+alert("Register.js is working");
 const departments = {
     "Faculty of Science": [
         "Computer Science",
@@ -59,6 +60,8 @@ faculty.addEventListener("change", function () {
 
 document.getElementById("registerForm").addEventListener("submit", function (e) {
     e.preventDefault();
+
+    alert("Form submitted");
     const firstname = document.getElementById("firstname").value.trim();
     const lastname = document.getElementById("lastname").value.trim();
     const email = document.getElementById("email").value.trim();

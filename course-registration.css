@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:linear-gradient( 135deg, #07132b 0%, #14154a 30%, #2a155d 60%, #0a0f26 100%);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.course-box{
+    width:1200px;
+    background:#ffffff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.course-box h1{
+    text-align:center;
+    color:#2a155d;
+    margin-bottom:10px;
+}
+
+.course-box h2{
+    text-align:center;
+    color:#555;
+    margin-bottom:30px;
+}
+
+.student-info{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.info-card{
+    background:#f5f5f5;
+    border-left:5px solid #2a155d;
+    padding:15px;
+    border-radius:10px;
+}
+
+.info-card label{
+    display:block;
+    font-weight:bold;
+    color:#2a155d;
+    margin-bottom:8px;
+}
+
+.info-card span{
+    font-size:17px;
+}
+
+.semester-title{
+    margin:30px 0 15px;
+    color:#2a155d;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:20px;
+}
+
+table th{
+    background:#2a155d;
+    color:white;
+    padding:14px;
+}
+
+table td{
+    padding:14px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+table tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+.unit-box{
+    background:#ece8ff;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:25px;
+    font-weight:bold;
+    color:#2a155d;
+}
+
+.grand-total{
+    background:#2a155d;
+    color:white;
+    padding:18px;
+    border-radius:10px;
+    text-align:center;
+    margin:25px 0;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.buttons button{
+    padding:14px 28px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+#registerBtn{
+    background:#28a745;
+    color:white;
+}
+
+#printBtn{
+    background:#007bff;
+    color:white;
+}
+
+#dashboardBtn{
+    background:#2a155d;
+    color:white;
+}
+
+.buttons button:hover{
+    transform:translateY(-3px);
+    opacity:.9;
+}
+
+input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    cursor:pointer;
+}
+
+@media print{
+    body{
+        background:white;
+        padding:0;
+    }
+
+    .buttons{
+        display:none;
+    }
+
+    .course-box{
+        width:100%;
+        box-shadow:none;
+    }
+}
+
+@media(max-width:900px){
+.student-info{
+    grid-template-columns:1fr;
+}
+
+.course-box{
+    width:100%;
+    padding:20px;
+}
+
+table{
+    font-size:13px;
+}
+
+table th,
+table td{
+    padding:10px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.buttons button{
+    width:100%;
+}
+}
+
+status-box{
+    background: #ece8ff;
+    border-left: 5px solid #28a745;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.status-box{
+    color: #28a745;
+    font-weight: bold;
+}

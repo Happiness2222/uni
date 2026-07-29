@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration | Evergreen State University</title>
+    <link rel="stylesheet" href="course-registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="course-box">
+        <h1>Evergreen State University</h1>
+        <h2>Course Registration</h2>
+        <div class="status-box">
+            <h3>
+                Registration Status:
+                <span id="registrationStatus">NOT REGISTERED</span>
+            </h3>
+        </div>
+        <div class="student-info">
+            <div class="info-card">
+                <label>Full Name</label>
+                <span id="fullname"></span>
+            </div>
+
+            <div class="info-card">
+                <label>Registration Number</label>
+                <span id="regno"></span>
+            </div>
+
+            <div class="info-card">
+                <label>Matric Number</label>
+                <span id="matric"></span>
+            </div>
+
+            <div class="info-card">
+                <label>Faculty</label>
+                <span id="faculty"></span>
+            </div>
+
+            <div class="info-card">
+                <label>Department</label>
+                <span id="department"></span>
+            </div>
+
+            <div class="info-card">
+                <label>Level</label>
+                <span id="level"></span>
+            </div>
+        </div>
+
+        <form id="courseForm">
+            <h3 class="semester-title">First Semester</h3>
+            <table id="firstSemesterTable">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Units</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- JavaScript will load courses here -->
+                </tbody>
+            </table>
+
+            <div class="unit-box">
+                First Semester Units :
+                <span id="firstUnits">0</span>
+            </div>
+
+            <h3 class="semester-title">Second Semester</h3>
+            <table id="secondSemesterTable">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Units</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <!-- JavaScript will load courses here -->
+                </tbody>
+            </table>
+
+            <div class="unit-box">
+                Second Semester Units :
+                <span id="secondUnits">0</span>
+            </div>
+
+            <hr>
+            <div class="grand-total">
+                <h2>
+                    Grand Total Units :
+                    <span id="grandUnits">0</span>
+                </h2>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" id="registerBtn">
+                    Register Courses
+                </button>
+
+                <button type="button" id="printBtn">
+                    Print Registration Slip
+                </button>
+
+                <button type="button" id="dashboardBtn">
+                    Dashboard
+                </button>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    alert("Inline script works");
+</script>
+
+<script src="course-registration.js?v=1"></script>
+
+</body>
+</html>
