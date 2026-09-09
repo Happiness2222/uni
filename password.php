@@ -1,0 +1,59 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["student_id"])) {
+    header("Location: login.html");
+    exit();
+
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password | Evergreen State University</title>
+<link rel="stylesheet" href="password.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+<div class="password-box">
+<h1>Evergreen State University</h1>
+<h2>Change Password</h2>
+<form id="passwordForm">
+
+<div class="input-box">
+<label>Current Password</label>
+<input type="password" id="currentPassword" required>
+</div>
+
+<div class="input-box">
+<label>New Password</label>
+<input type="password" id="newPassword" required>
+</div>
+
+<div class="input-box">
+<label>Confirm New Password</label>
+<input type="password" id="confirmPassword" required>
+</div>
+
+<button type="submit">
+Change Password
+</button>
+</form>
+</div>
+</div>
+
+<!-- <script>
+    alert("Inline script works");
+</script> -->
+
+<script src="password.js?v=2"></script>
+
+</body>
+</html>

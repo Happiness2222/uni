@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login | Evergreen State University</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="login-box">
+        <h1>Student Portal</h1>
+        <p>Login to your account</p>
+        <form id="loginForm" action="login.php" method="POST">
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <div class="password-box">
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                    <i class="fa-solid fa-eye"
+                    id="togglePassword"></i>
+                </div>
+            </div>
+
+            <button type="submit">
+                Login
+            </button>
+
+            <p class="register-link">
+                Don't have an account?
+                <a href="register.html">
+                    Register
+                </a>
+            </p>
+        </form>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

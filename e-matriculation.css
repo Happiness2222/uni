@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:linear-gradient( 135deg, #07132b 0%, #14154a 30%, #2a155d 60%, #0a0f26 100%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.matric-card{
+    width:900px;
+    background:#ffffff;
+    color:#222;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.matric-card h1{
+    text-align:center;
+    color:#2a155d;
+    margin-bottom:10px;
+}
+
+.matric-card h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#555;
+}
+
+.passport{
+    display:flex;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.passport img{
+    width:140px;
+    height:170px;
+    border:3px solid #2a155d;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:30px;
+}
+
+table td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+table td:first-child{
+    width:35%;
+    background:#f3f3f3;
+    font-weight:bold;
+}
+
+.oath{
+    margin-top:20px;
+}
+
+.oath h3{
+    color:#2a155d;
+    margin-bottom:10px;
+}
+
+.oath p{
+    line-height:1.8;
+    text-align:justify;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+}
+
+button{
+    padding:14px 30px;
+    border:none;
+    border-radius:10px;
+    background:#2a155d;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+button:hover{
+    background:#7d4fff;
+    transform:translateY(-3px);
+}
+
+@media print{
+    body{
+        background:white;
+        padding:0;
+    }
+
+    .buttons{
+        display:none;
+    }
+
+    .matric-card{
+        box-shadow:none;
+        width:100%;
+    }
+}
+@media(max-width:768px){
+.matric-card{
+    width:100%;
+    padding:20px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+button{
+    width:100%;
+}
+
+.passport img{
+    width:110px;
+    height:140px;
+}
+}
