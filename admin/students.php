@@ -171,13 +171,15 @@ if (!$result) {
 
         .search-container{
             background: white;
-            padding: 15px 20px;
+            padding: 12px 18px;
             border-radius: 12px;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
             gap: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            width: 100%;
+            max-width: 300px;
         }
 
         .search-container i{
