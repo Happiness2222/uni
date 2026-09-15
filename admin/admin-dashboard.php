@@ -352,16 +352,64 @@ $application_count = $application_query->fetch_assoc()["total"];
             }
 
         }
+
+        .logo {
+    text-align: center;
+    padding: 20px 10px 12px;
+    color: white;
+}
+
+.university-icon {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.logo p {
+    margin: 7px 0 0;
+    font-size: 11px;
+    opacity: 0.85;
+}
+
+.admin-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    color: white;
+}
+
+.admin-title i {
+    font-size: 20px;
+}
+
+.admin-title h2 {
+    margin: 0;
+    font-size: 18px;
+}
     </style>
 
 </head>
 <body>
     <div class="sidebar">
         <div class="logo">
-            <i class="fa-solid fa-user-shield"></i>
-            <h2>Admin Panel</h2>
-        </div>
+    <i class="fa-solid fa-graduation-cap university-icon"></i>
 
+    <h2>Evergreen State</h2>
+    <h2>University</h2>
+
+    <p>Learn Today. Lead Tomorrow.</p>
+</div>
+
+<div class="admin-title">
+    <i class="fa-solid fa-user-shield"></i>
+    <h2>Admin Panel</h2>
+</div>
         <ul>
             <li>
                 <a
